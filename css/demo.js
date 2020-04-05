@@ -236,21 +236,51 @@ encrypted(b);
 
  
 });
+var lastvalue,insert2,insert1;
+insert2= document.getElementById("da");
+insert1= document.getElementById("in");
+
+
 
 function myFunction() {
+    document.getElementById('copy').style.display="none";
+   
     /* Get the text field */
     var copyText = document.getElementById("da");
   
     /* Select the text field */
     copyText.select();
     copyText.setSelectionRange(0, 99999); /*For mobile devices*/
-  
+     
+     
     /* Copy the text inside the text field */
+    
+   if(copyText.value!==lastvalue && isNaN(copyText.value)){
     document.execCommand("copy");
-  
+    
+    document.getElementById('copy').style.display="block";
+   }
+   else{
+    //alert("Copied the text: " + copyText.value);
+   }
     /* Alert the copied text */
-    alert("Copied the text: " + copyText.value);
+   lastvalue=copyText.value;
+
+  
   } 
+
+  insert2.addEventListener('mouseover',function(){
+    myFunction();
+});
+insert2.addEventListener('pointerout',function(){
+    myFunction();
+});
+insert1.addEventListener('mouseover',function(){
+    insert1.select();
+});
+
+
+
 
  
 
