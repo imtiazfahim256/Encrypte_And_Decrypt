@@ -9,15 +9,12 @@ click.addEventListener('click',function(){
     var ed='',b=[],encrypted,a;
    
   a=document.querySelector('input').value;
-
+  
 
 for(var i=0;i<a.length;i++){
     b.push(a[i]);
 }
 
-//document.querySelector('h2').textContent=b.join('-');
-
- 
 
 encrypted=function(a){
     
@@ -92,7 +89,7 @@ encrypted=function(a){
         }
         else if(a[i]=='w'||a[i]=='W'){
             //empt.push('23');
-            ed+='_';
+            ed+='>';
         }
         else if(a[i]=='x'||a[i]=='X'){
             ed+='+';
@@ -192,7 +189,7 @@ encrypted=function(a){
         else if(a[i]=='-'){
             ed+='v';
         }
-        else if(a[i]=='_'){
+        else if(a[i]=='>'){
             ed+='w';
         }
         else if(a[i]=='+'){
@@ -204,15 +201,31 @@ encrypted=function(a){
         else if(a[i]=='{'){
             ed+='z';
         }
-
-        else if(isNaN(a[i])){
+       
+        else if(!isNaN(a[i])){
             
             ed+="_";
+          
+        }
+        else if(a[i]=='_'){
+            
+            ed+="_";
+          
+        }
+        else if(a[i]=='.'){
+            
+            ed+=".";
+          
+        }
+        else if(a[i]=='?'){
+            
+            ed+="?";
+          
         }
         
         
     }
-      console.log(ed);
+     
   
         document.querySelector('h2').textContent=ed; 
     
