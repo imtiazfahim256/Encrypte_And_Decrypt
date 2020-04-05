@@ -272,6 +272,9 @@ function myFunction() {
   insert2.addEventListener('mouseover',function(){
     myFunction();
 });
+insert2.addEventListener('touchmove',function(){
+    myFunction();
+});
 insert2.addEventListener('pointerout',function(){
     myFunction();
 });
