@@ -261,8 +261,13 @@ function myFunction() {
     document.getElementById('copy').style.display="block";
    }
    else{
-    //alert("Copied the text: " + copyText.value);
-     document.getElementById('copy').style.display="block";
+    if(!isNaN(copyText.value)){
+
+    }
+    else{
+        document.getElementById('copy').style.display="block";
+    }
+    
    }
     /* Alert the copied text */
    lastvalue=copyText.value;
@@ -270,9 +275,15 @@ function myFunction() {
   
   } 
 
+
+  insert2.addEventListener('click',function(){
+    myFunction();
+});
+
   insert2.addEventListener('mouseover',function(){
     myFunction();
 });
+
 insert2.addEventListener('touchmove',function(){
     myFunction();
 });
@@ -282,6 +293,7 @@ insert2.addEventListener('pointerout',function(){
 insert1.addEventListener('mouseover',function(){
     insert1.select();
 });
+
 
 
 
