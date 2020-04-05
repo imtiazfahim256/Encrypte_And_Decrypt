@@ -1,6 +1,34 @@
 
-* 
 
+.textform1:focus{
+    background-color: darkslategrey;
+    color: white;
+    width: 100%;
+}
 
+.textform2:focus{
+    background-color: darkslategrey;
+    color: white;
+    width: 100%;
+}
 
+.textform1{
+    height: 15vh;
+   border-top-color: lightblue;
+   border-bottom-color: red;
+  border-inline-start-color: greenyellow;
+  border-inline-end-color: rebeccapurple;
+  font-family: 'Inconsolata', monospace;
+  padding: 5px;
+}
+
+.textform2{
+    height: 15vh;
+   border-top-color: lightblue;
+   border-bottom-color: red;
+  border-inline-start-color: greenyellow;
+  border-inline-end-color: rebeccapurple;
+  font-family: 'Inconsolata', monospace;
+  padding: 5px;
+}
 

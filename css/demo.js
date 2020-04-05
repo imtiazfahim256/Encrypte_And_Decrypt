@@ -1,6 +1,6 @@
 
+var copy;
 
-console.log(event);
 var click = document.querySelector(".click");
 
 click.addEventListener('click',function(){
@@ -8,7 +8,7 @@ click.addEventListener('click',function(){
     
     var ed='',b=[],encrypted,a;
    
-  a=document.querySelector('input').value;
+  a=document.querySelector('#in').value;
   
 
 for(var i=0;i<a.length;i++){
@@ -227,16 +227,33 @@ encrypted=function(a){
     }
      
   
-        document.querySelector('h2').textContent=ed; 
+        document.querySelector('#da').value=ed; 
     
      
 }
 encrypted(b);
+
+
  
 });
 
+function myFunction() {
+    /* Get the text field */
+    var copyText = document.getElementById("da");
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+  
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+  
+    /* Alert the copied text */
+    alert("Copied the text: " + copyText.value);
+  } 
 
  
+
 
 
 

@@ -24,25 +24,29 @@
 
 
 
-<div class="jumbotron bg-light mt-3" style="height: 100vh;">
-  <h3 class="font-size-sm-15 text-sm-center font-size-md-30 text-danger font-weight-bold text-capitalize" style="font-family: 'Lobster', cursive;">Note:You must use any Symbol For Space[Default:'_']</h3>
-    <input id="in" class="form-control " value="" placeholder="Type or input your text" >
-    <button class="click w-100 btn btn-success btn-lg mt-3" style="font-family: 'Do Hyeon', sans-serif;">Click</button>
-    <button id="reset"  class="click w-100 btn btn-outline-warning btn-lg mt-3 text-dark " style="font-family: 'Do Hyeon', sans-serif;" onclick=" document.getElementById('in').value='' ">Clear</button>
+<div class="jumbotron bg-dark pt-3" style="height: 100vh;">
 
-    <div class="card p-5 mt-5 bg-dark text-light">
-     
-      <h2 class="text-capitalize font-size-100per text-justify" style="font-family: 'Inconsolata', monospace;"></h2>
-    </div>
+ 
+  <h3 class="font-size-sm-15 text-sm-center font-size-md-30 text-danger font-weight-bold text-capitalize mb-3" style="font-family: 'Lobster', cursive;">Note:You must use any Symbol For Space[Default:'_']</h3>
+    <textarea id="in" class="form-control textform1 " value="" placeholder="Type or input your text" ></textarea>
+    <button class="click w-100 btn btn-success btn-lg mt-3" style="font-family: 'Do Hyeon', sans-serif;">CLICK</button>
+    <button id="reset"  class="click w-100 btn btn-outline-danger btn-lg mt-3 text-light " style="font-family: 'Do Hyeon', sans-serif;" onclick=" document.getElementById('in').value='' ">Clear</button>
+
     
-
+    <div class="card  mt-5 bg-dark text-light">
+     
+      <textarea class="text-capitalize form-control font-size-100per text-justify textform2"  onclick="myFunction()" id="da"></textarea>
+      <button id=""  class="click w-100 btn btn-outline-warning btn-lg mt-3 text-light " style="font-family: 'Do Hyeon', sans-serif;" onclick=" document.getElementById('da').value='' ">Clear</button>
   
+    </div>
+   
   
 </div>
 
 
+
   <script src="./css/jquery-3.4.1.slim.min.js"></script>
-  <script src="./css/jquery-3.4.1.slim.min.js"></script>
+  <script src="./css/popper.min.js"></script>
   <script src="./css/bootstrap.min.js"></script>
   <script src="./css/demo.js"></script>
 
