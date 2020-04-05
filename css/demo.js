@@ -262,6 +262,7 @@ function myFunction() {
    }
    else{
     //alert("Copied the text: " + copyText.value);
+     document.getElementById('copy').style.display="block";
    }
     /* Alert the copied text */
    lastvalue=copyText.value;
