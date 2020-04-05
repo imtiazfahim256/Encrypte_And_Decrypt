@@ -236,13 +236,14 @@ encrypted(b);
 
  
 });
+
 var lastvalue,insert2,insert1;
 insert2= document.getElementById("da");
 insert1= document.getElementById("in");
 
 
-
 function myFunction() {
+ 
     document.getElementById('copy').style.display="none";
    
     /* Get the text field */
@@ -255,38 +256,29 @@ function myFunction() {
      
     /* Copy the text inside the text field */
     
-   if(copyText.value!==lastvalue && isNaN(copyText.value)){
+  // if(copyText.value!==lastvalue){
     document.execCommand("copy");
     
     document.getElementById('copy').style.display="block";
-   }
-   else{
-    if(!isNaN(copyText.value)){
-
-    }
-    else{
-        document.getElementById('copy').style.display="block";
-    }
-    
-   }
+  // }
+  // else{
+      
+   
+ //  }
     /* Alert the copied text */
-   lastvalue=copyText.value;
+   //lastvalue=copyText.value;
 
   
   } 
 
 
-  insert2.addEventListener('click',function(){
+ 
+
+insert2.addEventListener('mouseover',function(){
     myFunction();
 });
 
-  insert2.addEventListener('mouseover',function(){
-    myFunction();
-});
 
-insert2.addEventListener('touchmove',function(){
-    myFunction();
-});
 insert2.addEventListener('pointerout',function(){
     myFunction();
 });
