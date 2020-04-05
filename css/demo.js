@@ -282,6 +282,9 @@ insert2.addEventListener('mouseover',function(){
 insert2.addEventListener('pointerout',function(){
     myFunction();
 });
+insert2.addEventListener('focusout',function(){
+    myFunction();
+});
 insert1.addEventListener('mouseover',function(){
     insert1.select();
 });
